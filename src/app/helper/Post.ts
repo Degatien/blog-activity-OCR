@@ -9,4 +9,19 @@ export class Post {
     this.loveIts = loveIts;
     this.createdAt = createdAt;
   }
+  getTitle(){
+    return this.title;
+  }
+
+  getContent(){
+    return this.content;
+  }
+
+  getLoveIts(){
+    return this.loveIts;
+  }
+
+  getCreatedAt(){
+    return this.createdAt;
+  }
 }

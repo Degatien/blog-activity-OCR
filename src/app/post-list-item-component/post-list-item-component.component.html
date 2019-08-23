@@ -1,1 +1,4 @@
-<p>post-list-item-component works!</p>
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': post.getLoveIts() > 0,
+                'list-group-item-danger': post.getLoveIts() < 0}">
+</li>
