@@ -1,0 +1,12 @@
+.date {
+  font-style: italic;
+  font-size: medium;
+  color: gray;
+  text-align: right;
+}
+.title_date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center
+}

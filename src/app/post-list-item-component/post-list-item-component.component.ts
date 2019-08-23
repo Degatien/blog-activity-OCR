@@ -13,4 +13,11 @@ export class PostListItemComponentComponent implements OnInit {
   ngOnInit() {
   }
 
+  onUpVoteClick(){
+    this.post.upVote();
+  }
+
+  onDownVoteClick(){
+    this.post.downVote();
+  }
 }

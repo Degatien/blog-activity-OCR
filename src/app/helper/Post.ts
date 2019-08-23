@@ -24,4 +24,12 @@ export class Post {
   getCreatedAt(){
     return this.createdAt;
   }
+
+  upVote(){
+    this.loveIts++;
+  }
+
+  downVote(){
+    this.loveIts--;
+  }
 }

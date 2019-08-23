@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Post} from './helper/Post'
+import {Post} from './helper/Post';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,7 +7,7 @@ import {Post} from './helper/Post'
 })
 export class AppComponent {
   post = [
-    new Post('Premier post', 'Ceci est le premier post, neutre', 0, new Date()),
+    new Post('Premier post', 'Ceci est le premier post, suffisament recent pour que personne n\'ai eu le temps de voter', 0, new Date()),
     new Post('Second post', 'Ceci est le second post, très apprécié', 16, new Date()),
     new Post('Troisième post', 'Ceci est le troisième post, très controversé', -9, new Date())
   ];
