@@ -1,4 +1,5 @@
 export class Post {
+  id: number;
   title: string;
   content: string;
   loveIts: number;
@@ -8,21 +9,6 @@ export class Post {
     this.content = content;
     this.loveIts = loveIts;
     this.createdAt = createdAt;
-  }
-  getTitle(){
-    return this.title;
-  }
-
-  getContent(){
-    return this.content;
-  }
-
-  getLoveIts(){
-    return this.loveIts;
-  }
-
-  getCreatedAt(){
-    return this.createdAt;
   }
 
   upVote(){

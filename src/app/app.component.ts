@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
-import {Post} from './helper/Post';
+import {Post} from './models/Post.model';
+import * as firebase from 'firebase';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  post = [
-    new Post('Premier post', 'Ceci est le premier post, suffisament recent pour que personne n\'ai eu le temps de voter', 0, new Date()),
-    new Post('Second post', 'Ceci est le second post, très apprécié', 16, new Date()),
-    new Post('Troisième post', 'Ceci est le troisième post, très controversé', -9, new Date())
-  ];
 
+  constructor() {
+    const firebaseConfig = {
+      apiKey: "AIzaSyBhWvh8m4A1ZNcX6SqMGnkn6a0XhUds1RM",
+      authDomain: "ocr-blog-89fca.firebaseapp.com",
+      databaseURL: "https://ocr-blog-89fca.firebaseio.com",
+      projectId: "ocr-blog-89fca",
+      storageBucket: "",
+      messagingSenderId: "823283813904",
+      appId: "1:823283813904:web:ee61de12e41f1f0d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  }
 }
